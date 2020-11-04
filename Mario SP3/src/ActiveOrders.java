@@ -6,5 +6,14 @@
 // Når ordren er afhentet skal den sendes hen til de inaktive ordre.
 // tænker også at den skal kunde hente kundens kunde nummer og kunne vise den valgte pizza og pris fra menuen.
 
-public class AktiveOrder {
+import java.util.ArrayList;
+
+public class ActiveOrders {
+
+
+
+
+
+
+
 }
