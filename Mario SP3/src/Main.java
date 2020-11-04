@@ -14,6 +14,7 @@ public class Main {
         customer.customerNumberGen();
         customer.customerInput();
 
+        //TODO: Finde ud af en måde hvorpå den aktive ordre class kan gribe de/den nyoprettede Customer Class object.
 
     }
 

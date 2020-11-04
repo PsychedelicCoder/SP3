@@ -16,13 +16,15 @@ public class Customer {
     int phoneNumber = 0;
     String name;
 
-
+    //Constructor
     public Customer(int customerNumber, int phoneNumber, String name) {
         this.customerNumber = customerNumber;
         this.phoneNumber = phoneNumber;
         this.name = name;
     }
 
+    //Denneher Scanner for input "navn" og "telefon nummer" når disse er tastet ind bliver det smidt ind i vores
+    //Custommer object og printet ud sammen med det genereret kunde nummer.
     public void customerInput(){
         Scanner cusInput = new Scanner(System.in);
 
