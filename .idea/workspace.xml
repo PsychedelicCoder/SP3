@@ -27,21 +27,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a8acf650-1447-44f7-9cbd-2bf05df43883" name="Default Changelist" comment="Added comments to each class.">
-      <change afterPath="$PROJECT_DIR$/resources/PizzaMenu.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Mario SP3/src/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mario SP3/src/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mario SP3/src/Dog.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mario SP3/src/DogServiceStuff/Dog.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mario SP3/src/DogService.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mario SP3/src/DogServiceStuff/DogService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mario SP3/src/DogServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mario SP3/src/DogServiceStuff/DogServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mario SP3/src/DogServiceImpFile.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mario SP3/src/DogServiceStuff/DogServiceImpFile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mario SP3/src/DogServiceStuff/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mario SP3/src/DogServiceStuff/DogService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mario SP3/src/DogServiceStuff/DogServiceImp.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mario SP3/src/DogServiceStuff/DogServiceImpFile.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mario SP3/src/DogServiceStuff/MainController.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Mario SP3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mario SP3/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mario SP3/src/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mario SP3/src/DogServiceStuff/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mario SP3/src/PizzaBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mario SP3/src/PizzaBar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SP3/dog.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SP3/dogTest.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/dog.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/dogTest.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mario SP3/src/MenuImpDK.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mario SP3/src/MenuImpENG.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,6 +87,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -103,7 +111,7 @@
       <updated>1604403282565</updated>
       <workItem from="1604403285500" duration="11563000" />
       <workItem from="1604433034341" duration="80000" />
-      <workItem from="1604433125013" duration="3232000" />
+      <workItem from="1604433125013" duration="4884000" />
     </task>
     <task id="LOCAL-00001" summary="Added comments to each class.">
       <created>1604405076769</created>
@@ -177,6 +185,22 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1604406936053" />
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom" timestamp="1604450012289">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604450012289" />
+    <state width="2517" height="401" key="GridCell.Tab.0.center" timestamp="1604450012289">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604450012289" />
+    <state width="2517" height="401" key="GridCell.Tab.0.left" timestamp="1604450012289">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604450012289" />
+    <state width="2517" height="401" key="GridCell.Tab.0.right" timestamp="1604450012289">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="401" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604450012289" />
     <state x="142" y="0" key="SettingsEditor" timestamp="1604410063987">
       <screen x="0" y="0" width="1280" height="680" />
     </state>

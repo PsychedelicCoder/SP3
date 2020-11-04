@@ -1,9 +1,7 @@
 /*
 @Julius Krüger Madsen
-@
-@
-@
  */
+import java.util.Scanner;
 // import java.lang.Math;
 // En kunde skal have et kunde nummer / bestillings nummer når de ringer ind og bestiller en pizza.
 // Hvis kunden ringer ind eller bestiller online, skal man også have deres telefon nummmer.
@@ -23,6 +21,24 @@ public class Customer {
         this.customerNumber = customerNumber;
         this.phoneNumber = phoneNumber;
         this.name = name;
+    }
+
+    public void customerInput(){
+        Scanner cusInput = new Scanner(System.in);
+
+        System.out.println("Enter the customers phone number and name here:");
+
+        // String input
+        String name = cusInput.nextLine();
+
+        // Numerical input
+        int phoneNumber = cusInput.nextInt();
+        //int customerNumber = cusInput.nextInt();
+
+        // Output input by user
+        System.out.println("Name: " + name);
+        System.out.println("Phone Number: " + phoneNumber);
+        System.out.println("Customer Number: " + customerNumber);
     }
 
     // Denneher måde er kun mulig fordi vi ikke skal gemme customerNumbers nogen steder og de behøver ikke være unikke.
