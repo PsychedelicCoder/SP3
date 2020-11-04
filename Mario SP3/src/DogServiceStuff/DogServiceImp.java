@@ -1,7 +1,12 @@
+package DogServiceStuff;
+
+import DogServiceStuff.Dog;
+import DogServiceStuff.DogService;
+
 import java.util.ArrayList;
 import java.util.List;
 
-public class DogServiceImp implements DogService{
+public class DogServiceImp implements DogService {
     private List<Dog> dogs;
 
     public DogServiceImp() {

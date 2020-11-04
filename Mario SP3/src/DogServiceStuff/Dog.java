@@ -1,3 +1,5 @@
+package DogServiceStuff;
+
 public class Dog {
 
    private int id;

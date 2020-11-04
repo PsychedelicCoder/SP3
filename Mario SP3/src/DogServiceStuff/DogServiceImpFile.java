@@ -1,9 +1,13 @@
+package DogServiceStuff;
+
+import DogServiceStuff.Dog;
+import DogServiceStuff.DogService;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.BooleanSupplier;
 
-public class DogServiceImpFile implements DogService{
+public class DogServiceImpFile implements DogService {
     List<Dog> dogs;
 
     public DogServiceImpFile() {
