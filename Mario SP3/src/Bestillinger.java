@@ -7,20 +7,31 @@
 
 import java.io.*;
 import java.util.ArrayList;
+import java.util.List;
 
-public class InactiveOrders {
+public class Bestillinger {
 
+    List<Order> orders = new ArrayList<>();
 
-    public static void inactiveOrdersWriteFile() {
+    public void addOrderToOrders(Order order){
+        orders.add(order);
+    }
+
+    public void writeOrdersToFile() {
 
         //write to file
         try {
-            FileOutputStream writeData = new FileOutputStream("InactiveOrders.csv");
-            ObjectOutputStream writeStream = new ObjectOutputStream(writeData);
+            FileWriter writeData = new FileWriter("InactiveOrders.csv");
+            BufferedWriter writeStream = new BufferedWriter(writeData);
+            String line = "";
 
-            writeStream.writeObject(ActiveOrders.activeOrders);
-            writeStream.flush();
+            for (Order o: orders) {
+                writeStream.write(o);
+                writeStream.newLine();
+            }
+
             writeStream.close();
+            writeData.close();
 
         } catch (IOException e) {
             e.printStackTrace();

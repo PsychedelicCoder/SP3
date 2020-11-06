@@ -16,7 +16,7 @@ public class Menu {
 // der er allerede givet de første 14 Pizza'er, vi skal så tilføje resten til vi rammer 30.
 // Denne klasse skal kunne læse dette text document.
 
-    public static void readFile() {
+    public void readFile() {
         try {
             File myMenu = new File("...\\Ressources\\Menu.csv");
             Scanner myReader = new Scanner(myMenu);

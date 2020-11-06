@@ -12,8 +12,7 @@ import java.util.Date;
 import java.io.*;
 import java.util.List;
 
-public class ActiveOrders implements Serializable {
-    //public Object activeOrders;
+public class Order implements Serializable {
 
     //opret ordre
     //evt sæt dem i en liste
@@ -26,7 +25,7 @@ public class ActiveOrders implements Serializable {
     //pickup time skal laves til metode
     Timestamp pickupTime;
 
-    public ActiveOrders(String pizza, int price) {
+    public Order(String pizza, int price) {
         this.pizza = pizza;
         this.price = price;
         calculateTimeForOrder();
@@ -35,15 +34,6 @@ public class ActiveOrders implements Serializable {
         System.out.println("Pizza:" + pizza + "Total amount:" + totalPrice() + "Order placed at:" + calculateTimeForOrder());
     }
 
-    /*
-    public Object arrayOfOrders() {
-        ActiveOrders p1 = new ActiveOrders("whatever", 190);
-        ArrayList<ActiveOrders> activeOrders = new ArrayList<>();
-        activeOrders.add(p1);
-
-        return activeOrders;
-    }
-     */
 
     //tidsmetode
     //man udregne hvad tid og dato, ordren er lagt
@@ -61,19 +51,17 @@ public class ActiveOrders implements Serializable {
         return pickupTime;
     }
 
-    public double getCost(){
-        return price;
-    }
+    public int totalPrice() {
+        price = 0;
+        for (int i = 0; i <orders.size(); i++) {
+            price += price = totalPrice();
 
-    public double totalPrice()
-    {
-        double totalPrice = 0;
-
-        for(int i = 0; i < activeOrders.size(); i++)
-        {
-            totalPrice += activeOrders.get(i).getCost();
         }
-        return totalPrice;
+        return totalPrice();
+        //Pris metode
+        //kan udregne prisen for alle pizzaerne i ordrene
+
     }
+
 
 }

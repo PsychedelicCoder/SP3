@@ -7,6 +7,7 @@
 // Der skal gøres brug af en eller anden form for scanner i det den skal afvente et input fra Alfons når der,
 // skal tilføjes en ny ordre eller slettes en færdig en.
 
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class PizzaBar {
@@ -14,6 +15,8 @@ public class PizzaBar {
     Scanner sc = new Scanner(System.in);
     int choice = 0;
     int exitValue = 7;
+
+    ArrayList<Order> orderServices = new ArrayList<>();
 
     public void runProgram() {
 
@@ -49,6 +52,7 @@ public class PizzaBar {
     }
 
     private void seeMenu() {
+        Menu.readFile();
 
     }
 
@@ -62,6 +66,11 @@ public class PizzaBar {
         customer.customerInput();
 
 
+
+        Order p1 = new Order("whatever", 190);
+        orderServices.add(p1);
+
+
     }
 
     private void seeActiveOrder() {
@@ -73,6 +82,7 @@ public class PizzaBar {
     }
 
     private void moveOrder() {
+        Bestillinger.writeOrdersToFile();
 
     }
 
