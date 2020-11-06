@@ -2,9 +2,11 @@
 @AUTHOR_TMP
  */
 
+import java.util.ArrayList;
+
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
         PizzaBar pb = new PizzaBar();
         pb.runProgram();
         Menu.readFile();
@@ -15,7 +17,7 @@ public class Main {
 
 
         //Customer stuff :P
-        Customer customer = new Customer(1,1,"");
+        Customer customer = new Customer(1, 1, "");
         customer.customerNumberGen();
         customer.customerInput();
 
@@ -33,36 +35,32 @@ public class Main {
         */
 
 
-    }
+        ActiveOrders p1 = new ActiveOrders("whatever", 190);
+        ArrayList<ActiveOrders> activeOrders = new ArrayList<>();
+        activeOrders.add(p1);
 
-    public static void addActiveOrder()
-    {
-
-    }
-
-    public static void removeActiveOrder()
-    {
 
     }
 
-    public static void listActiveOrders()
-    {
+    public static void addActiveOrder() {
 
     }
 
-    public static void listInactiveOrders()
-    {
+    public static void removeActiveOrder() {
 
     }
 
-    public static void exit()
-    {
+    public static void listActiveOrders() {
 
     }
 
+    public static void listInactiveOrders() {
 
+    }
 
+    public static void exit() {
 
+    }
 
 
 }

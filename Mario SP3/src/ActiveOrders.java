@@ -6,12 +6,14 @@
 // Når ordren er afhentet skal den sendes hen til de inaktive ordre.
 // tænker også at den skal kunde hente kundens kunde nummer og kunne vise den valgte pizza og pris fra menuen.
 
+import java.util.ArrayList;
 import java.sql.Timestamp;
 import java.util.Date;
 import java.io.*;
-import java.util.ArrayList;
+import java.util.List;
 
-public class ActiveOrders implements Serializable{
+public class ActiveOrders implements Serializable {
+    //public Object activeOrders;
 
     //opret ordre
     //evt sæt dem i en liste
@@ -24,33 +26,54 @@ public class ActiveOrders implements Serializable{
     //pickup time skal laves til metode
     Timestamp pickupTime;
 
-    public ActiveOrders(String pizza, int price){
+    public ActiveOrders(String pizza, int price) {
         this.pizza = pizza;
         this.price = price;
         calculateTimeForOrder();
+        totalPrice();
 
+        System.out.println("Pizza:" + pizza + "Total amount:" + totalPrice() + "Order placed at:" + calculateTimeForOrder());
+    }
+
+    /*
+    public Object arrayOfOrders() {
         ActiveOrders p1 = new ActiveOrders("whatever", 190);
         ArrayList<ActiveOrders> activeOrders = new ArrayList<>();
         activeOrders.add(p1);
 
-        System.out.println("Pizza:" + pizza + "Total amount:" + price + "Order placed at:" + calculateTimeForOrder());
+        return activeOrders;
     }
+     */
 
     //tidsmetode
     //man udregne hvad tid og dato, ordren er lagt
-    private Timestamp calculateTimeForOrder(){
+    private Timestamp calculateTimeForOrder() {
         Date date = new Date();
         timeForOrder = new Timestamp(date.getTime());
         return timeForOrder;
     }
+
     //pick up time metode
     //skal udregnes for pizzaernes præp tid.
-    private Timestamp pickupTime(){
+    private Timestamp pickupTime() {
         Date date = new Date();
         pickupTime = new Timestamp(date.getTime());
         return pickupTime;
     }
 
-    //Pris metode
-    //kan udregne prisen for alle pizzaerne i ordrene
+    public double getCost(){
+        return price;
+    }
+
+    public double totalPrice()
+    {
+        double totalPrice = 0;
+
+        for(int i = 0; i < activeOrders.size(); i++)
+        {
+            totalPrice += activeOrders.get(i).getCost();
+        }
+        return totalPrice;
+    }
+
 }

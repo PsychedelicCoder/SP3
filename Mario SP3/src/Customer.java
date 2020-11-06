@@ -1,6 +1,7 @@
 /*
 @Julius Krüger Madsen
  */
+
 import java.util.Scanner;
 // import java.lang.Math;
 // En kunde skal have et kunde nummer / bestillings nummer når de ringer ind og bestiller en pizza.
@@ -25,7 +26,7 @@ public class Customer {
 
     //Denneher Scanner for input "navn" og "telefon nummer" når disse er tastet ind bliver det smidt ind i vores
     //Custommer object og printet ud sammen med det genereret kunde nummer.
-    public void customerInput(){
+    public void customerInput() {
         Scanner cusInput = new Scanner(System.in);
 
         System.out.println("Enter the customers phone number and name here:");

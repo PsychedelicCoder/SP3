@@ -11,14 +11,10 @@ import java.util.ArrayList;
 public class InactiveOrders {
 
 
-
-
-
-
     public static void inactiveOrdersWriteFile() {
 
         //write to file
-        try{
+        try {
             FileOutputStream writeData = new FileOutputStream("InactiveOrders.csv");
             ObjectOutputStream writeStream = new ObjectOutputStream(writeData);
 
@@ -26,7 +22,7 @@ public class InactiveOrders {
             writeStream.flush();
             writeStream.close();
 
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
 /*
@@ -43,11 +39,6 @@ public class InactiveOrders {
         }
  */
     }
-
-
-
-    }
-
 
 
 }
