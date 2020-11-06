@@ -29,6 +29,10 @@ public class ActiveOrders implements Serializable{
         this.price = price;
         calculateTimeForOrder();
 
+        ActiveOrders p1 = new ActiveOrders("whatever", 190);
+        ArrayList<ActiveOrders> activeOrders = new ArrayList<>();
+        activeOrders.add(p1);
+
         System.out.println("Pizza:" + pizza + "Total amount:" + price + "Order placed at:" + calculateTimeForOrder());
     }
 

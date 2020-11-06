@@ -22,7 +22,7 @@ public class InactiveOrders {
             FileOutputStream writeData = new FileOutputStream("InactiveOrders.csv");
             ObjectOutputStream writeStream = new ObjectOutputStream(writeData);
 
-            writeStream.writeObject(??);
+            writeStream.writeObject(ActiveOrders.activeOrders);
             writeStream.flush();
             writeStream.close();
 
