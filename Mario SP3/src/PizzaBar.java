@@ -67,7 +67,7 @@ public class PizzaBar {
 
 
 
-        Order p1 = new Order("whatever", 190);
+        Order p1 = new Order("", 1);
         orderServices.add(p1);
 
 

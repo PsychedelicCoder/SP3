@@ -1,5 +1,8 @@
 /*
-@AUTHOR_TMP
+@Annika
+@Oliver Jenbo
+@Maria
+@Julius
  */
 
 public class Main {
@@ -9,12 +12,7 @@ public class Main {
         pb.runProgram();
 
 
-        //Customer stuff :P
-        Customer customer = new Customer(1, 1, "");
-        customer.customerNumberGen();
-        customer.customerInput();
-
-        //TODO: Finde ud af en måde hvorpå den aktive ordre class kan gribe de/den nyoprettede Customer Class object.
+        //TODO: OBS ... tingene skal ikke kaldes fra main guys, Pizzabar er vores Controller! :D
 
         /*
 
