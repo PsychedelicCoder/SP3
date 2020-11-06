@@ -5,8 +5,13 @@
 public class Main {
 
     public static void main(String[] args){
-       // MainController mc = new MainController();
-       // mc.runProgram();
+        PizzaBar pb = new PizzaBar();
+        pb.runProgram();
+        Menu.readFile();
+
+
+        //inactiveOrders stuff :D
+        InactiveOrders.inactiveOrdersWriteFile();
 
 
         //Customer stuff :P
