@@ -26,14 +26,7 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a8acf650-1447-44f7-9cbd-2bf05df43883" name="Default Changelist" comment="Added comments to each class.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mario SP3/src/ActiveOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mario SP3/src/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mario SP3/src/InactiveOrders.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mario SP3/src/Bestillinger.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mario SP3/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mario SP3/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mario SP3/src/Menu.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mario SP3/src/Menu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mario SP3/src/PizzaBar.java" beforeDir="false" afterPath="$PROJECT_DIR$/Mario SP3/src/PizzaBar.java" afterDir="false" />
-    </list>
+    <list default="true" id="a8acf650-1447-44f7-9cbd-2bf05df43883" name="Default Changelist" comment="Added comments to each class." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -108,7 +101,7 @@
       <workItem from="1604433125013" duration="5399000" />
       <workItem from="1604498765800" duration="8034000" />
       <workItem from="1604581813244" duration="654000" />
-      <workItem from="1604651346136" duration="8615000" />
+      <workItem from="1604651346136" duration="8717000" />
     </task>
     <task id="LOCAL-00001" summary="Added comments to each class.">
       <created>1604405076769</created>
