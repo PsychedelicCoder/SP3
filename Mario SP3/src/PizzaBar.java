@@ -64,7 +64,11 @@ public class PizzaBar {
     private void seeMenu() {
         menu.readFile();
 
+<<<<<<< HEAD
         for (Pizza pizza : menu.getPizzas()) {
+=======
+        for (Pizza pizza:menu.getPizzas()) {
+>>>>>>> 61a1bff6aac0f8768ad0942c95281000fa3040ca
             System.out.println(pizza);
         }
 
@@ -74,12 +78,25 @@ public class PizzaBar {
     private void newCostumerAndOrder() {
         Customer customer = new Customer(1, 1, "");
         ui.newCustommer(customer);
+<<<<<<< HEAD
+=======
+
+        Order o1 = new Order("", 1);
+        //ui.newOrder(o1);
+
+>>>>>>> 61a1bff6aac0f8768ad0942c95281000fa3040ca
 
         Ui ui = new Ui();
         Order order = new Order(customer);
 
+<<<<<<< HEAD
         ui.newOrder(order, menu);
         orderServices.add(order);
+=======
+        Order p1 = new Order(customer);
+        orderServices.add(p1);
+
+>>>>>>> 61a1bff6aac0f8768ad0942c95281000fa3040ca
 
     }
 

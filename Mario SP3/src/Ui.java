@@ -4,6 +4,7 @@ public class Ui {
 
     Scanner cusInput = new Scanner(System.in);
 
+<<<<<<< HEAD
     public void newOrder(Order order, Menu menu) {
 
         System.out.println("Vælg Pizza ()");
@@ -22,6 +23,25 @@ public class Ui {
         }
 
 
+=======
+    public void newOrder(Order order, Menu menu){
+
+        System.out.println("Vælg Pizza ()");
+
+        int pChoice=0;
+        int pExit=99;
+
+        while(pChoice != pExit){
+
+            int pizzaId = cusInput.nextInt();
+            Pizza pizza = menu.getPizzaById(pizzaId);
+            order.addPizzaToOrder(pizza);
+
+        }
+
+
+
+>>>>>>> 61a1bff6aac0f8768ad0942c95281000fa3040ca
     }
 
     public void newCustommer(Customer customer) {

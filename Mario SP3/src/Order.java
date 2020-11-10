@@ -18,6 +18,10 @@ public class Order implements Serializable {
     Bestillinger bestillinger = new Bestillinger();
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 61a1bff6aac0f8768ad0942c95281000fa3040ca
     //opret ordre
     //evt sæt dem i en liste
     // - og så de kan rykkes evt
@@ -31,7 +35,10 @@ public class Order implements Serializable {
     //pickup time skal laves til metode
     Timestamp pickupTime;
     Customer customer;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 61a1bff6aac0f8768ad0942c95281000fa3040ca
 
 
 
@@ -40,9 +47,21 @@ public class Order implements Serializable {
         this.customer = customer;
     }
 
+<<<<<<< HEAD
     public void addPizzaToOrder(Pizza pizza) {
         this.pizzas.add(pizza);
     }
+=======
+    public void addPizzaToOrder(Pizza pizza){
+        this.pizzas.add(pizza);
+    }
+
+    public Order(Customer customer){
+        pizzas = new ArrayList<>();
+        this.customer = customer;
+    }
+
+>>>>>>> 61a1bff6aac0f8768ad0942c95281000fa3040ca
 
     //tidsmetode
     //man udregne hvad tid og dato, ordren er lagt
@@ -60,6 +79,13 @@ public class Order implements Serializable {
         return pickupTime;
     }
 
+<<<<<<< HEAD
+=======
+    public int totalPrice() {
+        price = 0;
+        for (int i = 0; i <bestillinger.getOrders().size(); i++) {
+            price += price = totalPrice();
+>>>>>>> 61a1bff6aac0f8768ad0942c95281000fa3040ca
 
 
 

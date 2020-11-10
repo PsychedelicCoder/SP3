@@ -175,10 +175,17 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="948" y="508" key="#com.intellij.fileTypes.FileTypeChooser/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604430798434" />
+<<<<<<< HEAD
     <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1605012762357">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1605012762357" />
+=======
+    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser" timestamp="1604933651763">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state x="446" y="47" key="#com.intellij.ide.util.MemberChooser/0.0.1280.680@0.0.1280.680" timestamp="1604933651763" />
+>>>>>>> 61a1bff6aac0f8768ad0942c95281000fa3040ca
     <state x="892" y="97" key="#com.intellij.ide.util.MemberChooser/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604654540382" />
     <state x="371" y="130" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1604403350988">
       <screen x="0" y="0" width="1280" height="680" />
@@ -193,6 +200,7 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="371" y="88" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1280.680@0.0.1280.680" timestamp="1604406936053" />
+<<<<<<< HEAD
     <state width="1237" height="204" key="GridCell.Tab.0.bottom" timestamp="1605013967542">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -212,6 +220,27 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1237" height="204" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1605013967542" />
+=======
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom" timestamp="1604934861309">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.bottom/0.0.1280.680@0.0.1280.680" timestamp="1604934861309" />
+    <state width="2517" height="758" key="GridCell.Tab.0.bottom/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604505825570" />
+    <state width="1237" height="163" key="GridCell.Tab.0.center" timestamp="1604934861309">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.center/0.0.1280.680@0.0.1280.680" timestamp="1604934861309" />
+    <state width="2517" height="758" key="GridCell.Tab.0.center/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604505825570" />
+    <state width="1237" height="163" key="GridCell.Tab.0.left" timestamp="1604934861309">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.left/0.0.1280.680@0.0.1280.680" timestamp="1604934861309" />
+    <state width="2517" height="758" key="GridCell.Tab.0.left/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604505825570" />
+    <state width="1237" height="163" key="GridCell.Tab.0.right" timestamp="1604934861309">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="1237" height="163" key="GridCell.Tab.0.right/0.0.1280.680@0.0.1280.680" timestamp="1604934861309" />
+>>>>>>> 61a1bff6aac0f8768ad0942c95281000fa3040ca
     <state width="2517" height="758" key="GridCell.Tab.0.right/0.0.2560.1400/-1920.0.1920.1040@0.0.2560.1400" timestamp="1604505825570" />
     <state width="1237" height="204" key="GridCell.Tab.1.bottom" timestamp="1605013967546">
       <screen x="0" y="0" width="1280" height="680" />
