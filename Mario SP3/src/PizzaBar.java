@@ -12,9 +12,14 @@ import java.util.Scanner;
 
 public class PizzaBar {
 
+    Bestillinger bestillinger = new Bestillinger();
+
+    Menu menu = new Menu();
+    Ui ui = new Ui();
+
     Scanner sc = new Scanner(System.in);
     int choice = 0;
-    int exitValue = 7;
+    int exitValue = 6;
 
     ArrayList<Order> orderServices = new ArrayList<>();
 
@@ -28,20 +33,17 @@ public class PizzaBar {
                     seeMenu();
                     break;
                 case 2:
-                    seeCostumersOrder();
-                    break;
-                case 3:
                     newCostumerAndOrder();
                     break;
-                case 4:
+                case 3:
                     seeActiveOrder();
                     break;
-                case 5:
+                case 4:
                     seeInactiveOrder();
                     break;
-                case 6:
+                case 5:
                     moveOrder();
-                case 7:
+                case 6:
                     exit();
                     break;
                 default:
@@ -52,22 +54,25 @@ public class PizzaBar {
     }
 
     private void seeMenu() {
-        Menu.readFile();
+        menu.readFile();
+
+        for (Pizza pizza:menu.getPizzas()) {
+            System.out.println(pizza);
+        }
 
     }
 
-    private void seeCostumersOrder() {
-
-    }
 
     private void newCostumerAndOrder() {
         Customer customer = new Customer(1, 1, "");
-        customer.customerNumberGen();
-        customer.customerInput();
+        ui.newCustommer(customer);
+
+        Order o1 = new Order("", 1);
+        //ui.newOrder(o1);
 
 
 
-        Order p1 = new Order("", 1);
+        Order p1 = new Order(customer);
         orderServices.add(p1);
 
 
@@ -78,11 +83,12 @@ public class PizzaBar {
     }
 
     private void seeInactiveOrder() {
+        bestillinger.readOrdersFromFile();
 
     }
 
     private void moveOrder() {
-        Bestillinger.writeOrdersToFile();
+        bestillinger.writeOrdersToFile();
 
     }
 

@@ -27,21 +27,7 @@ public class Customer {
     //Denneher Scanner for input "navn" og "telefon nummer" når disse er tastet ind bliver det smidt ind i vores
     //Custommer object og printet ud sammen med det genereret kunde nummer.
     public void customerInput() {
-        Scanner cusInput = new Scanner(System.in);
 
-        System.out.println("Enter the customers phone number and name here:");
-
-        // String input
-        String name = cusInput.nextLine();
-
-        // Numerical input
-        int phoneNumber = cusInput.nextInt();
-        //int customerNumber = cusInput.nextInt();
-
-        // Output input by user
-        System.out.println("Name: " + name);
-        System.out.println("Phone Number: " + phoneNumber);
-        System.out.println("Customer Number: " + customerNumber);
     }
 
     // Denneher måde er kun mulig fordi vi ikke skal gemme customerNumbers nogen steder og de behøver ikke være unikke.
