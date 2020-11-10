@@ -13,20 +13,36 @@ public class Bestillinger {
 
     List<Order> orders = new ArrayList<>();
 
-    public void addOrderToOrders(Order order){
+    public void addOrderToOrders(Order order) {
         orders.add(order);
+    }
+
+    public void readOrdersFromFile() {
+
+        //read from file
+        try {
+            FileInputStream readData = new FileInputStream("resources\\InactiveOrders.csv");
+            ObjectInputStream readStream = new ObjectInputStream(readData);
+
+            readStream.close();
+
+            System.out.println(orders.toString());
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     public void writeOrdersToFile() {
 
         //write to file
         try {
-            FileWriter writeData = new FileWriter("InactiveOrders.csv");
+            FileWriter writeData = new FileWriter("resources\\InactiveOrders.csv");
             BufferedWriter writeStream = new BufferedWriter(writeData);
             String line = "";
 
-            for (Order o: orders) {
-                writeStream.write(o);
+            for (Order o : orders) {
+                writeStream.write(o.toString());
                 writeStream.newLine();
             }
 
@@ -36,20 +52,16 @@ public class Bestillinger {
         } catch (IOException e) {
             e.printStackTrace();
         }
-/*
-        try{
-            FileInputStream readData = new FileInputStream("InactiveOrders.csv");
-            ObjectInputStream readStream = new ObjectInputStream(readData);
-
-            ArrayList ??p = (ArrayList<??>) readStream.readObject();
-            readStream.close();
-
-            System.out.println(??p.toString());
-        }catch (IOException | ClassNotFoundException e) {
-            e.printStackTrace();
-        }
- */
     }
 
+    @Override
+    public String toString() {
+        return "Bestillinger{" +
+                "orders=" + orders +
+                '}';
+    }
 
+    public List<Order> getOrders() {
+        return orders;
+    }
 }

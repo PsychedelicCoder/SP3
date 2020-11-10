@@ -15,9 +15,14 @@ import java.util.List;
 
 public class Order implements Serializable {
 
+    Bestillinger bestillinger = new Bestillinger();
+
+
     //opret ordre
     //evt sæt dem i en liste
     // - og så de kan rykkes evt
+
+    List<Pizza> pizzas;
 
     String pizza;
     //price skal laves til en metode
@@ -25,16 +30,19 @@ public class Order implements Serializable {
     Timestamp timeForOrder;
     //pickup time skal laves til metode
     Timestamp pickupTime;
+    Customer customer;
 
-    public Order(String pizza, int price) {
-        this.pizza = pizza;
-        this.price = price;
-        calculateTimeForOrder();
-        totalPrice();
 
-        System.out.println("Pizza:" + pizza + "Total amount:" + totalPrice() + "Order placed at:" + calculateTimeForOrder());
+
+
+    public Order(Customer customer) {
+        pizzas = new ArrayList<>();
+        this.customer = customer;
     }
 
+    public void addPizzaToOrder(Pizza pizza) {
+        this.pizzas.add(pizza);
+    }
 
     //tidsmetode
     //man udregne hvad tid og dato, ordren er lagt
@@ -52,17 +60,7 @@ public class Order implements Serializable {
         return pickupTime;
     }
 
-    public int totalPrice() {
-        price = 0;
-        for (int i = 0; i <orders.size(); i++) {
-            price += price = totalPrice();
 
-        }
-        return totalPrice();
-        //Pris metode
-        //kan udregne prisen for alle pizzaerne i ordrene
-
-    }
 
 
 }
